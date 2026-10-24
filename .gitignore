@@ -1,0 +1,26 @@
+# Keil MDK-ARM build output
+MDK-ARM/u8g2/
+MDK-ARM/*.uvguix.*
+MDK-ARM/*.lst
+*.o
+*.crf
+*.axf
+*.hex
+*.bin
+*.elf
+*.map
+*.dep
+*.lnp
+*.htm
+*.build_log.htm
+*.d
+*.bak
+*.iex
+*.sct
+
+# IDE / OS
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
