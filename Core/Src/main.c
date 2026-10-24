@@ -24,7 +24,8 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "stm32_u8g2.h"
+#include "test.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -90,7 +91,8 @@ int main(void)
   MX_I2C1_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-
+  u8g2_t u8g2;
+  u8g2Init(&u8g2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -100,6 +102,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+    u8g2DrawTest(&u8g2);
   }
   /* USER CODE END 3 */
 }

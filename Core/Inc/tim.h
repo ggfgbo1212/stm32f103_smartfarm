@@ -29,7 +29,10 @@ extern "C" {
 #include "main.h"
 
 /* USER CODE BEGIN Includes */
+/* TIM1 runs at 1 MHz (72 MHz / (71 + 1)), one counter tick = 1 us */
+#define DLY_TIM_Handle (&htim1)
 
+void Tims_delay_us(uint16_t nus);
 /* USER CODE END Includes */
 
 extern TIM_HandleTypeDef htim1;
